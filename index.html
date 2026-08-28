@@ -5,17 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>P Lakshmi — Senior Applications Software Engineer</title>
 <meta name="description" content="Portfolio of P Lakshmi, Senior Applications Software Engineer at Oracle India. Java, Spring Boot, Oracle ADF, REST APIs." />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>P</text></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💠</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+<div class="noise"></div>
+
 <header class="site-header">
   <nav class="nav container">
-    <a href="#home" class="logo">P Lakshmi</a>
+    <a href="#home" class="logo"><span class="logo-badge">PL</span>Lakshmi</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -23,7 +25,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
     <div class="nav-actions">
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
@@ -41,32 +43,47 @@
 
   <!-- HERO -->
   <section id="home" class="hero container">
-    <div class="hero-text">
-      <p class="eyebrow">Available for new opportunities</p>
-      <h1>P Lakshmi</h1>
-      <p class="role">Senior Applications Software Engineer</p>
-      <p class="hero-keywords">Java · Spring Boot · Oracle ADF · REST APIs · SQL · PL/SQL</p>
-      <p class="hero-sub">Four years building enterprise ERP software at Oracle India — Java, Spring Boot, Oracle ADF and REST APIs powering Oracle Fusion for global customers.</p>
+    <div class="hero-text reveal">
+      <p class="eyebrow"><span class="pulse-dot"></span> Open to new opportunities</p>
+      <h1>Hi, I'm <span class="grad-text">P Lakshmi</span><br/>Senior Applications<br/>Software Engineer</h1>
+      <p class="hero-sub">Four years building enterprise ERP software at Oracle India — Java, Spring Boot, Oracle ADF &amp; REST APIs powering Oracle Fusion for global customers.</p>
       <div class="hero-actions">
         <a href="mailto:lakshmipadmanabhan2000@gmail.com" class="btn btn-primary">Get in touch</a>
-        <a href="P-Lakshmi-Resume.pdf" download class="btn btn-ghost">Download resume</a>
+        <a href="P-Lakshmi-Resume.pdf" download class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          Download resume
+        </a>
+        <a href="#experience" class="btn btn-ghost">View experience</a>
       </div>
       <div class="hero-links">
-        <a href="https://github.com/lakshmipadmanabhan2000" target="_blank" rel="noopener">🐙 GitHub</a>
-        <a href="https://linkedin.com/in/lakshmi-padmanabhan" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a href="https://github.com/lakshmipadmanabhan2000" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/lakshmi-padmanabhan" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="profile.jpg" alt="P Lakshmi" />
+    <div class="hero-visual reveal">
+      <div class="avatar-glow"></div>
+      <div class="avatar-ring">
+        <div class="avatar">
+          <img src="profile.jpg" alt="P Lakshmi" />
+        </div>
+      </div>
+      <div class="float-card card-1">☕ Java</div>
+      <div class="float-card card-2">🌱 Spring Boot</div>
+      <div class="float-card card-3">🔺 Oracle ADF</div>
+      <div class="float-card card-4">50+ issues resolved</div>
     </div>
   </section>
 
+  <a href="#about" class="scroll-cue reveal" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+
   <!-- ABOUT -->
   <section id="about" class="container section">
-    <h2 class="section-title">About</h2>
-    <div class="about-grid">
+    <h2 class="section-title reveal"><span class="title-icon">👋</span> About</h2>
+    <div class="about-grid reveal">
       <p class="about-text">
-        I'm a software engineer at Oracle India, working on enterprise features for
+        I'm a software engineer at <strong>Oracle India</strong>, working on enterprise features for
         Oracle Fusion ERP across the Project Management (PPM) and Foundation &amp; Control modules.
         I build scalable backend services with Java, Oracle ADF, Spring Boot, SQL and PL/SQL — and
         modernize legacy Ext JS interfaces into clean, maintainable UI. I've shipped 10+ customer-facing
@@ -85,102 +102,110 @@
 
   <!-- EXPERIENCE -->
   <section id="experience" class="container section">
-    <h2 class="section-title">Experience</h2>
-    <div class="entry-list">
+    <h2 class="section-title reveal"><span class="title-icon">💼</span> Experience</h2>
+    <div class="timeline">
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Senior Applications Software Engineer</h3>
-          <span class="entry-date">Oct 2025 — Present</span>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Senior Applications Software Engineer</h3>
+            <span class="timeline-date">Oct 2025 — Present</span>
+          </div>
+          <p class="timeline-org">Oracle India Pvt. Ltd. · Thiruvananthapuram, India</p>
+          <ul>
+            <li>Leveraged Oracle AI Assistant, OpenAI Codex, and ChatGPT to accelerate development, debugging, root cause analysis, technical documentation, and feature implementation.</li>
+            <li>Designed, developed and delivered enterprise features for Oracle Fusion ERP across Project Management (PPM) and Foundation &amp; Control modules, using Java, Oracle ADF, Spring Boot, SQL, PL/SQL, and REST APIs.</li>
+            <li>Designed and enhanced MVC-based Ext JS UI components, modernizing legacy Ext JS modules to Pure JavaScript to improve maintainability and UX.</li>
+            <li>Led development of Engineering &amp; Construction (E&amp;C) enhancements — FBDI-based bulk data import, Change Order Automation, and Contract Updates.</li>
+            <li>Led root cause analysis and resolution of critical production issues in collaboration with customers, Product Management, QA, and cross-functional teams.</li>
+            <li>Mentored junior engineers through technical guidance, code reviews, and knowledge sharing.</li>
+          </ul>
         </div>
-        <p class="entry-org">Oracle India Pvt. Ltd. · Thiruvananthapuram, India</p>
-        <ul>
-          <li>Leveraged Oracle AI Assistant, OpenAI Codex, and ChatGPT to accelerate development, debugging, root cause analysis, technical documentation, and feature implementation.</li>
-          <li>Designed, developed and delivered enterprise features for Oracle Fusion ERP across Project Management (PPM) and Foundation &amp; Control modules, using Java, Oracle ADF, Spring Boot, SQL, PL/SQL, and REST APIs.</li>
-          <li>Designed and enhanced MVC-based Ext JS UI components, modernizing legacy Ext JS modules to Pure JavaScript to improve maintainability and UX.</li>
-          <li>Led development of Engineering &amp; Construction (E&amp;C) enhancements — FBDI-based bulk data import, Change Order Automation, and Contract Updates.</li>
-          <li>Led root cause analysis and resolution of critical production issues in collaboration with customers, Product Management, QA, and cross-functional teams.</li>
-          <li>Mentored junior engineers through technical guidance, code reviews, and knowledge sharing.</li>
-        </ul>
-      </article>
+      </div>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Applications Engineer</h3>
-          <span class="entry-date">Aug 2022 — Sep 2025</span>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Applications Engineer</h3>
+            <span class="timeline-date">Aug 2022 — Sep 2025</span>
+          </div>
+          <p class="timeline-org">Oracle India Pvt. Ltd. · Thiruvananthapuram, India</p>
+          <ul>
+            <li>Delivered <strong>10+ customer-facing enhancements</strong> across Oracle Fusion Project Management, including Change Orders, Change Requests, and Milestone-Based Billing.</li>
+            <li>Resolved <strong>50+ production issues</strong> through root cause analysis, significantly improving application stability and customer experience.</li>
+            <li>Designed and implemented backend business logic using Java, Oracle ADF, SQL, and PL/SQL for enterprise ERP applications.</li>
+            <li>Developed, tested, and validated REST APIs supporting quarterly Oracle Fusion product releases.</li>
+            <li>Built automation test suites of <strong>100+ JUnit, PL/SQL, and REST API</strong> test cases, reducing manual regression effort and improving release readiness.</li>
+            <li>Collaborated with Product Management, QA, and global engineering teams throughout the SDLC in an Agile environment.</li>
+          </ul>
         </div>
-        <p class="entry-org">Oracle India Pvt. Ltd. · Thiruvananthapuram, India</p>
-        <ul>
-          <li>Delivered 10+ customer-facing enhancements across Oracle Fusion Project Management, including Change Orders, Change Requests, and Milestone-Based Billing.</li>
-          <li>Resolved 50+ production issues through root cause analysis, significantly improving application stability and customer experience.</li>
-          <li>Designed and implemented backend business logic using Java, Oracle ADF, SQL, and PL/SQL for enterprise ERP applications.</li>
-          <li>Developed, tested, and validated REST APIs supporting quarterly Oracle Fusion product releases.</li>
-          <li>Built automation test suites of 100+ JUnit, PL/SQL, and REST API test cases, reducing manual regression effort and improving release readiness.</li>
-          <li>Collaborated with Product Management, QA, and global engineering teams throughout the SDLC in an Agile environment.</li>
-        </ul>
-      </article>
+      </div>
 
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="container section">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title reveal"><span class="title-icon">🧠</span> Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card">
+
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">🤖</span>AI &amp; GenAI</h3>
         <div class="tags"><span>Prompt Engineering</span><span>LLMs</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">⌨️</span>Languages</h3>
         <div class="tags"><span>Java</span><span>JavaScript</span><span>Python</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">⚙️</span>Backend &amp; APIs</h3>
         <div class="tags"><span>Spring Boot</span><span>Microservices</span><span>REST APIs</span><span>FastAPI</span><span>Node.js</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">🎨</span>Frontend</h3>
         <div class="tags"><span>Oracle ADF</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Ext JS</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">🗄️</span>Database</h3>
         <div class="tags"><span>Oracle Database</span><span>MongoDB</span><span>SQL</span><span>PL/SQL</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">🧪</span>Testing &amp; Automation</h3>
         <div class="tags"><span>JUnit</span><span>REST API Testing</span><span>Postman</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">🤝</span>Practices</h3>
         <div class="tags"><span>Agile</span><span>Scrum</span><span>SDLC</span><span>Cross-functional Collaboration</span></div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <h3><span class="skill-icon">🛠️</span>Tools</h3>
         <div class="tags"><span>Git</span><span>Docker</span><span>VS Code</span><span>BugDB</span><span>Confluence</span></div>
       </div>
+
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="container section">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title reveal"><span class="title-icon">🚀</span> Projects</h2>
     <div class="project-grid">
 
-      <article class="project-card">
+      <article class="project-card reveal">
         <div class="project-icon">🛰️</div>
         <h3>Satellite Image to Map Generation</h3>
         <p class="project-tag">Deep Learning · Python</p>
         <p>Deep learning model for satellite image-to-map translation using Generative Adversarial Networks (GANs) — including image preprocessing, model training, and performance evaluation for image-to-image translation.</p>
-        <p class="project-stack">Python, GANs</p>
+        <div class="tags"><span>Python</span><span>GANs</span></div>
       </article>
 
-      <article class="project-card">
+      <article class="project-card reveal">
         <div class="project-icon">🗳️</div>
         <h3>E-Ballot System</h3>
         <p class="project-tag">Web Application</p>
         <p>Secure online voting application with user authentication and vote management, including backend APIs and database integration for efficient election management.</p>
-        <p class="project-stack">Node.js, MongoDB, HTML, CSS, JavaScript</p>
+        <div class="tags"><span>Node.js</span><span>MongoDB</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
       </article>
 
     </div>
@@ -188,41 +213,35 @@
 
   <!-- EDUCATION -->
   <section id="education" class="container section">
-    <h2 class="section-title">Education</h2>
-
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-head">
-          <h3>Bachelor of Technology — Computer Science and Engineering</h3>
-          <span class="entry-date">2018 — 2022</span>
-        </div>
-        <p class="entry-org">Sree Chitra Thirunal College of Engineering, APJ Abdul Kalam Technological University</p>
-        <p class="edu-gpa">CGPA: 9.51 / 10 · College Rank 3</p>
+    <h2 class="section-title reveal"><span class="title-icon">🎓</span> Education</h2>
+    <div class="edu-card reveal">
+      <div class="edu-head">
+        <h3>Bachelor of Technology — Computer Science and Engineering</h3>
+        <span class="timeline-date">2018 — 2022</span>
       </div>
-
-      <div class="edu-card">
-        <div class="edu-icon">🏫</div>
-        <div class="edu-head">
-          <h3>Class XII — Higher Secondary</h3>
-          <span class="entry-date">Passed out 2018</span>
-        </div>
-        <p class="entry-org">Chinmaya Vidyalaya, Kunnumpuram</p>
-        <p class="edu-gpa">93.2% · Rank 3</p>
-      </div>
-
-      <div class="edu-card">
-        <div class="edu-icon">🏫</div>
-        <div class="edu-head">
-          <h3>Class X</h3>
-          <span class="entry-date">Passed out 2016</span>
-        </div>
-        <p class="entry-org">Chinmaya Vidyalaya, Kunnumpuram</p>
-        <p class="edu-gpa">89%</p>
-      </div>
+      <p class="timeline-org">Sree Chitra Thirunal College of Engineering, APJ Abdul Kalam Technological University</p>
+      <p class="edu-gpa">CGPA: 9.51 / 10 · College Rank 3</p>
     </div>
 
-    <div class="two-col">
+    <div class="edu-card reveal">
+      <div class="edu-head">
+        <h3>Class XII — Higher Secondary</h3>
+        <span class="timeline-date">Passed out 2018</span>
+      </div>
+      <p class="timeline-org">Chinmaya Vidyalaya, Kunnumpuram</p>
+      <p class="edu-gpa">93.2% · Rank 3</p>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-head">
+        <h3>Class X</h3>
+        <span class="timeline-date">Passed out 2016</span>
+      </div>
+      <p class="timeline-org">Chinmaya Vidyalaya, Kunnumpuram</p>
+      <p class="edu-gpa">89%</p>
+    </div>
+
+    <div class="two-col reveal">
       <div>
         <h3 class="sub-heading">Courses &amp; Certifications</h3>
         <ul class="plain-list">
@@ -249,23 +268,25 @@
 
   <!-- HOBBIES -->
   <section id="hobbies" class="container section">
-    <h2 class="section-title">Beyond Work</h2>
+    <h2 class="section-title reveal"><span class="title-icon">🎯</span> Beyond Work</h2>
     <div class="hobbies-grid">
-      <div class="hobby-card"><span class="hobby-icon">🏋️</span><span class="hobby-label">Gym</span></div>
-      <div class="hobby-card"><span class="hobby-icon">🎬</span><span class="hobby-label">Movies</span></div>
-      <div class="hobby-card"><span class="hobby-icon">🎵</span><span class="hobby-label">Music</span></div>
-      <div class="hobby-card"><span class="hobby-icon">🍔</span><span class="hobby-label">Food</span></div>
+      <div class="hobby-card reveal"><span class="hobby-icon">🏋️</span><span class="hobby-label">Gym</span></div>
+      <div class="hobby-card reveal"><span class="hobby-icon">🎬</span><span class="hobby-label">Movies</span></div>
+      <div class="hobby-card reveal"><span class="hobby-icon">🎵</span><span class="hobby-label">Music</span></div>
+      <div class="hobby-card reveal"><span class="hobby-icon">🍔</span><span class="hobby-label">Food</span></div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="container section">
-    <h2 class="section-title">Get in touch</h2>
-    <div class="contact-grid">
-      <a href="mailto:lakshmipadmanabhan2000@gmail.com" class="contact-pill">✉️ lakshmipadmanabhan2000@gmail.com</a>
-      <a href="tel:+917736533792" class="contact-pill">📞 +91 7736533792</a>
-      <a href="https://linkedin.com/in/lakshmi-padmanabhan" target="_blank" rel="noopener" class="contact-pill">💼 LinkedIn</a>
-      <a href="https://github.com/lakshmipadmanabhan2000" target="_blank" rel="noopener" class="contact-pill">🐙 GitHub</a>
+  <section id="contact" class="container section contact-section">
+    <h2 class="section-title reveal"><span class="title-icon">📬</span> Get in touch</h2>
+    <div class="contact-box reveal">
+      <div class="contact-methods">
+        <a href="mailto:lakshmipadmanabhan2000@gmail.com" class="contact-pill">✉️ lakshmipadmanabhan2000@gmail.com</a>
+        <a href="tel:+917736533792" class="contact-pill">📞 +91 7736533792</a>
+        <a href="https://linkedin.com/in/lakshmi-padmanabhan" target="_blank" rel="noopener" class="contact-pill">🔗 LinkedIn</a>
+        <a href="https://github.com/lakshmipadmanabhan2000" target="_blank" rel="noopener" class="contact-pill">🐙 GitHub</a>
+      </div>
     </div>
   </section>
 
@@ -273,7 +294,7 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>P Lakshmi</p>
+    <p>Designed &amp; built by P Lakshmi.</p>
     <p id="year"></p>
   </div>
 </footer>
