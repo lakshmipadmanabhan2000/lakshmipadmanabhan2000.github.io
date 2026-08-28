@@ -101,9 +101,11 @@ img{ max-width:100%; display:block; }
 
 .hero-photo{ display:flex; justify-content:center; }
 .hero-photo img{
-  width: 200px; height:200px; border-radius:50%; object-fit:cover;
+  width: 150px; height:150px; border-radius:50%; object-fit:cover;
   border: 1px solid var(--border);
 }
+
+.hero-keywords{ font-size:.85rem; color: var(--text-muted); margin-top:.6rem; }
 
 /* ---------- Section heads ---------- */
 .section-title{
