@@ -223,30 +223,26 @@ img{ max-width:100%; display:block; }
 .stat-num{ display:block; font-family: var(--font-head); font-size:2rem; font-weight:700; color: var(--accent); }
 .stat-label{ font-size:.82rem; color: var(--text-muted); }
 
-/* ---------- Timeline ---------- */
-.timeline{ position:relative; padding-left: 2.5rem; }
-.timeline::before{
-  content:''; position:absolute; left: 7px; top:6px; bottom:6px; width:2px;
-  background: linear-gradient(var(--accent), var(--accent-2));
+/* ---------- Experience ---------- */
+.experience-list{ display:flex; flex-direction:column; gap: 1.5rem; }
+.experience-card{
+  position:relative; background: var(--bg-elevated); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 1.75rem 2rem; box-shadow: var(--shadow); transition: transform .2s, border-color .2s;
 }
-.timeline-item{ position:relative; margin-bottom: 3rem; }
-.timeline-item:last-child{ margin-bottom:0; }
-.timeline-dot{
-  position:absolute; left: -2.5rem; top: 6px; width:16px; height:16px; border-radius:50%;
-  background: var(--bg); border: 3px solid var(--accent);
-}
-.timeline-content{
-  background: var(--bg-elevated); border:1px solid var(--border); border-radius: var(--radius);
-  padding: 1.75rem 2rem; box-shadow: var(--shadow);
-}
+.experience-card:hover{ transform: translateY(-3px); border-color: var(--accent); }
+.experience-icon{ font-size:1.5rem; margin-bottom: .6rem; }
 .timeline-head{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem; align-items:baseline; margin-bottom:.3rem; }
 .timeline-head h3{ font-size:1.2rem; }
-.timeline-date{ font-family: var(--font-mono); font-size:.82rem; color: var(--accent-2); white-space:nowrap; }
+.timeline-date{ font-family: var(--font-mono); font-size:.82rem; color: var(--accent-2); white-space:nowrap; display:flex; align-items:center; gap:.5rem; }
+.badge{
+  font-family: var(--font-body); font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+  background: var(--accent-soft); color: var(--accent); padding:.2rem .55rem; border-radius:999px;
+}
 .timeline-org{ color: var(--text-muted); font-size:.92rem; margin-bottom: 1rem; font-style: italic; }
-.timeline-content ul{ display:flex; flex-direction:column; gap:.6rem; }
-.timeline-content li{ position:relative; padding-left: 1.2rem; font-size:.95rem; color: var(--text); }
-.timeline-content li::before{ content:'▹'; position:absolute; left:0; color: var(--accent); }
-.timeline-content li strong{ color: var(--accent); }
+.experience-card ul{ display:flex; flex-direction:column; gap:.6rem; }
+.experience-card li{ position:relative; padding-left: 1.2rem; font-size:.95rem; color: var(--text); }
+.experience-card li::before{ content:'▹'; position:absolute; left:0; color: var(--accent); }
+.experience-card li strong{ color: var(--accent); }
 
 /* ---------- Skills ---------- */
 .skills-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.25rem; }
@@ -285,10 +281,14 @@ img{ max-width:100%; display:block; }
 .edu-gpa{ color: var(--accent); font-weight:600; font-size:.9rem; margin-top:.5rem; }
 .two-col{ display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .sub-heading{ font-size: 1rem; margin-bottom: 1rem; color: var(--text); }
-.plain-list{ display:flex; flex-direction:column; gap:.7rem; }
-.plain-list li{ position:relative; padding-left:1.2rem; font-size:.92rem; color: var(--text-muted); }
-.plain-list li::before{ content:'—'; position:absolute; left:0; color: var(--accent); }
-.plain-list li em{ color: var(--accent-2); font-style: normal; font-family: var(--font-mono); font-size:.75rem; }
+.course-tags span{ font-family: var(--font-body); text-transform:none; letter-spacing:normal; }
+.course-tags span em{ color: var(--accent-2); font-style: normal; font-family: var(--font-mono); font-size:.72rem; }
+.achievement-list{ display:flex; flex-direction:column; gap:.6rem; }
+.achievement-list li{
+  display:flex; align-items:flex-start; gap:.6rem; font-size:.88rem; color: var(--text);
+  background: var(--bg-elevated); border:1px solid var(--border); border-radius: 8px; padding: .65rem .9rem;
+}
+.ach-icon{ flex:none; font-size:.95rem; }
 
 /* ---------- Hobbies ---------- */
 .hobbies-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.25rem; }
@@ -342,7 +342,5 @@ img{ max-width:100%; display:block; }
 }
 @media (max-width: 520px){
   .stat-grid{ grid-template-columns: 1fr 1fr; }
-  .timeline{ padding-left: 1.75rem; }
-  .timeline-dot{ left: -1.75rem; }
   .contact-methods{ flex-direction:column; align-items:stretch; }
 }
